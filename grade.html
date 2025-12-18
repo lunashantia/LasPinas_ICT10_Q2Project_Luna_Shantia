@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade Calculator</title>
+        <link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<style>
+
+body {background-color: rgb(118, 204, 144);}
+
+h1 {font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; color: green;}
+
+.navbar-custom {
+    background-color: green;
+}
+
+.main-container {background-color: green; padding: 20px; margin-top: 10px;}
+
+
+
+.nav-link.active {
+    color: #fff !important;
+    text-shadow: 0 0 8px #ffffff, 0 0 15px #ffffff;
+}
+
+</style>
+
+</head>
+<body>
+
+      <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+    <div class="container">
+        <a class="navbar-brand" href="index.html"></i>Vine Academy</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">HOME</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="grade.html">GRADE CALCULATOR</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="club.html">CLUB INFORMATION</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<h1 style="text-align: center; margin-top: 20px; "><strong>Grade Calculator</strong></h1>
+
+<div class="container main-container text-white col-md-6 col-lg-4" id="grades">
+
+    <div style="max-width: 400px;">
+    <h1>Grade Calculator</h1>
+        <div id="box" class="mb-3">
+            <label for="first"> First Name </label>
+            <input class="form-control" id="first" type="text">
+
+            <label for="last" class="mb-3"> Last Name </label>
+            <input class="form-control" id="last" type="text">
+         </div>
+
+        <h5>Enter Grades:</h5>
+        <label for="first">English</label>
+        <input class="form-control" id="g1" type="text">
+
+        <label for="first">Filipino</label>
+        <input class="form-control" id="g2" type="text">
+
+        <label for="first">Social Studies</label>
+        <input class="form-control" id="g3" type="text">
+
+        <label for="first">Science</label>
+        <input class="form-control" id="g4" type="text">
+
+        <label for="first">Math</label>
+        <input class="form-control" id="g5" type="text">
+
+        <label for="first">ICT</label>
+        <input class="form-control" id="g6" type="text">
+
+        <button class="btn btn-light mt-3" py-click="calculate_grade">Calculate</button>
+
+    <div id="full" class="mt-2"></div>
+    <div id="final" class="mt-2"></div>
+    <div id="output" class="mt-2"></div>
+    </div>
+
+    <py-script src="main.py"></py-script>
+
+
+
+
+    
+
+</body>
+</html>
